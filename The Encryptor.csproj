@@ -1,0 +1,76 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>The_Encryptor</RootNamespace>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Program_Icon.ico</ApplicationIcon>
+    <StartupObject></StartupObject>
+    <Copyright>Free</Copyright>
+    <Authors>Tamer R Zekry</Authors>
+    <Company>TRS Soft</Company>
+    <Description>Tool to encrypt and decrept a File</Description>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\MainWindow_Icon.jpg" />
+    <None Remove="Images\Main_BackGround_II.jpg" />
+    <None Remove="Images\Main_BackGround_Rev.jpg" />
+    <None Remove="Images\open-file-icon.png" />
+    <None Remove="Images\Open_File.png" />
+    <None Remove="Images\Password.jpg" />
+    <None Remove="Images\Power_Off.jpg" />
+    <None Remove="Images\Program_Icon.ico" />
+    <None Remove="Images\Splash_Screen.png" />
+    <None Remove="Main_BackGround_II.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Images\Enc.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\Main BackGround .jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\power-off.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\PublishProfiles\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\MainWindow_Icon.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Main_BackGround_II.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Main_BackGround_Rev.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Open_File.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Password.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Power_Off.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Program_Icon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Splash_Screen.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
